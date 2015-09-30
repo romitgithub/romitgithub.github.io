@@ -41,7 +41,7 @@ body{
 
 #container{
 	padding:40px;
-	margin: 0 auto;
+	padding-top: 10px;
 	width: 1300px;
 }
 
@@ -69,7 +69,7 @@ body{
 .resumeBlocks h3{
 	margin: 0;
 	padding-bottom: 20px;
-	color: #F55B4F;
+	color: #CB212E;
 	font-size: 24px;
 	font-family: 'quicksand-bold';
 }
@@ -82,7 +82,7 @@ body{
 .sideBlocks h3{
 	margin: 0;
 	padding-bottom: 10px;
-	color: #F55B4F;
+	color: #CB212E;
 }
 
 .sideBlocks p{
@@ -90,7 +90,7 @@ body{
 }
 
 .dates{
-	color: #F55B4F;
+	color: #CB212E;
 	font-weight: bold;
 }
 
