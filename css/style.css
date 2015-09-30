@@ -33,7 +33,7 @@ body{
 }
 
 *{
-	color: #3f3f3f;
+	color: #000;
 	font-family: 'quicksand-regular';
 	-webkit-box-sizing: none;
 	box-sizing: none;
@@ -42,23 +42,24 @@ body{
 #container{
 	padding:40px;
 	padding-top: 10px;
-	width: 1300px;
+	width: 1240px;
+	margin: 0 auto;
 }
 
 #leftContainer{
 	display: inline-block;
 	vertical-align: top;
-	width: 860px;
+	width: 820px;
 	border-right: 1px solid #dcdcdc; 
 }
 
 #rightContainer{
 	display: inline-block;
-	width: 360px;
+	width: 340px;
 	vertical-align: top;
 	margin: 10px;
 	padding: 10px;
-	padding-left: 30px;
+	padding-left: 10px;
 }
 
 .resumeBlocks{
@@ -144,7 +145,7 @@ body{
 #summary{
 	border-left: 1px solid #dcdcdc;
 	padding-left: 20px;
-	padding-right: 50px;
+	padding-right: 30px;
 	margin-bottom: 40px;
 }
 
