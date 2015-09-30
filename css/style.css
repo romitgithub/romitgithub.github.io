@@ -41,15 +41,15 @@ body{
 
 #container{
 	padding:40px;
-	padding-top: 10px;
-	width: 1240px;
+	padding-top: 0px;
+	width: 1220px;
 	margin: 0 auto;
 }
 
 #leftContainer{
 	display: inline-block;
 	vertical-align: top;
-	width: 820px;
+	width: 800px;
 	border-right: 1px solid #dcdcdc; 
 }
 
@@ -63,8 +63,8 @@ body{
 }
 
 .resumeBlocks{
-	margin: 10px;
-	padding: 10px;
+	margin: 5px;
+	padding: 5px;
 }
 
 .resumeBlocks h3{
