@@ -33,7 +33,7 @@ body{
 }
 
 *{
-	color: #000;
+	color: #3f3f3f;
 	font-family: 'quicksand-regular';
 	-webkit-box-sizing: none;
 	box-sizing: none;
@@ -41,36 +41,35 @@ body{
 
 #container{
 	padding:40px;
-	padding-top: 0px;
-	width: 1180px;
 	margin: 0 auto;
+	width: 1300px;
 }
 
 #leftContainer{
 	display: inline-block;
 	vertical-align: top;
-	width: 760px;
+	width: 860px;
 	border-right: 1px solid #dcdcdc; 
 }
 
 #rightContainer{
 	display: inline-block;
-	width: 340px;
+	width: 360px;
 	vertical-align: top;
 	margin: 10px;
 	padding: 10px;
-	padding-left: 10px;
+	padding-left: 30px;
 }
 
 .resumeBlocks{
-	margin: 5px;
-	padding: 5px;
+	margin: 10px;
+	padding: 10px;
 }
 
 .resumeBlocks h3{
 	margin: 0;
 	padding-bottom: 20px;
-	color: #CB212E;
+	color: #F55B4F;
 	font-size: 24px;
 	font-family: 'quicksand-bold';
 }
@@ -83,7 +82,7 @@ body{
 .sideBlocks h3{
 	margin: 0;
 	padding-bottom: 10px;
-	color: #CB212E;
+	color: #F55B4F;
 }
 
 .sideBlocks p{
@@ -91,7 +90,7 @@ body{
 }
 
 .dates{
-	color: #CB212E;
+	color: #F55B4F;
 	font-weight: bold;
 }
 
@@ -145,8 +144,8 @@ body{
 #summary{
 	border-left: 1px solid #dcdcdc;
 	padding-left: 20px;
-	padding-right: 30px;
-	margin-bottom: 20px;
+	padding-right: 50px;
+	margin-bottom: 40px;
 }
 
 #summary p{
