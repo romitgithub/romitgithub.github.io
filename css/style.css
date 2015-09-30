@@ -42,14 +42,14 @@ body{
 #container{
 	padding:40px;
 	padding-top: 0px;
-	width: 1200px;
+	width: 1180px;
 	margin: 0 auto;
 }
 
 #leftContainer{
 	display: inline-block;
 	vertical-align: top;
-	width: 780px;
+	width: 760px;
 	border-right: 1px solid #dcdcdc; 
 }
 
