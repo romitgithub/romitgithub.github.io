@@ -24,12 +24,30 @@
     src: url('../fonts/Quicksand-Bold.otf');
 }
 
+@font-face {
+	font-family: 'ssp-regular';
+	src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'ssp-light';
+	src: url('../fonts/SourceSansPro-Light.ttf');
+}
+
+@font-face {
+	font-family: 'ssp-bold';
+	src: url('../fonts/SourceSansPro-Bold.ttf');
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	font-family: 'quicksand-regular';
 	-webkit-box-sizing:inherit;
 	box-sizing:inherit;
+	font-size: 13px;
+	line-height: 1.3;
+	background: rgb(245, 245, 245);
 }
 
 *{
@@ -41,20 +59,23 @@ body{
 
 #container{
 	padding:40px;
-	margin: 0 auto;
-	width: 1300px;
+	margin: 40px auto;
+	width: 1040px;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 2px -2px 8px #e6e6e6;
 }
 
 #leftContainer{
 	display: inline-block;
 	vertical-align: top;
-	width: 860px;
-	border-right: 1px solid #dcdcdc; 
+	width: 720px;
+	border-right: 1px solid rgba(234, 234, 234, 0.46); 
 }
 
 #rightContainer{
 	display: inline-block;
-	width: 360px;
+	width: 254px;
 	vertical-align: top;
 	margin: 10px;
 	padding: 10px;
@@ -74,6 +95,11 @@ body{
 	font-family: 'quicksand-bold';
 }
 
+span.online-profile-links i{
+	margin-top: 6px;
+	font-size: 20px;
+}
+
 .sideBlocks{
 	margin: 10px;
 	padding: 10px;
@@ -86,7 +112,10 @@ body{
 }
 
 .sideBlocks p{
-	margin: 4px;
+	margin-right: 4px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 0;
 }
 
 .dates{
@@ -131,7 +160,7 @@ body{
 }
 
 #profileSummary{
-	border-left: 1px solid #dcdcdc;
+	border-left: 1px solid rgba(234, 234, 234, 0.46);
 	padding-left: 20px;
 	padding-right: 100px;
 }
@@ -142,7 +171,7 @@ body{
 }
 
 #summary{
-	border-left: 1px solid #dcdcdc;
+	border-left: 1px solid rgba(234, 234, 234, 0.46);
 	padding-left: 20px;
 	padding-right: 50px;
 	margin-bottom: 40px;
