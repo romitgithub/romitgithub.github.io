@@ -1,0 +1,493 @@
+/*  Min Height of the page 1024px if screen height < 1024px
+============================================================================*/
+@media (max-height: 1023px) and (min-width: 1025px) {
+    .mh-1024px {
+        height: 1024px;
+        min-height: 1024px;
+    }
+}
+
+/*  Gradient
+============================================================================*/
+.changing-gradient {
+
+    background: #ff3f71;
+    background-image: linear-gradient(135deg, #ff2d60, #ff9132, #ff61fa, #6caafd, #29ccff, #1deab9);
+    background-repeat: no-repeat;
+    background-size: 800% 400%;
+
+    -webkit-animation-name: bgAnimationChangingGradient;
+    animation-name: bgAnimationChangingGradient;
+
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+@keyframes bgAnimationChangingGradient {
+    0% {
+        background-position: 0 50%
+    }
+    to {
+        background-position: 100% 50%
+    }
+}
+
+div.changing-gradient {
+    min-height: 100%;
+}
+
+/*  Utilities
+============================================================================*/
+html, body, .full-width-height {
+    width: 100%;
+    min-height: 100%;
+}
+
+.mh-100-per {
+    min-height: 100%;
+}
+
+.h-100-per {
+    height: 100%;
+}
+
+.ov-hidden {
+    overflow: hidden;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.dis-table {
+    display: table;
+}
+
+/*  Fonts
+============================================================================*/
+.proxima-nova {
+    font-family: "Proxima Nova";
+}
+
+/* Android & iOS Detection
+============================================================================*/
+.only {
+    display: none;
+}
+
+html.android .only.android,
+html.iOS .only.iOS,
+html.non-mobile .only {
+    display: initial;
+}
+
+/*  App Store & Play Store Links
+============================================================================*/
+
+.app-links a {
+    display: inline-block;
+}
+
+a.android, a.iOS{
+    display: none;
+}
+
+/* Phone Section
+============================================================================*/
+
+.img-wrapper {
+    width: 100%;
+}
+
+.phone-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper .phone-wrapper
+    /*, .img-wrapper img*/
+{
+    width: 400px;
+    /*margin-right: 2.5em;*/
+    /* margin-bottom: -371px; */
+    /* display: inline-block; */
+    position: relative;
+    top: 5px;
+    float: right;
+    margin-right: 40px;
+    /*margin: auto;*/
+}
+
+.phone-wrapper > img {
+    display: block;
+    width: 100%;
+}
+
+.haikujam .tagline {
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.21em;
+}
+
+/*  Links Section - Bottom of the page
+============================================================================*/
+.links-section {
+    background-color: #f7f7f7;
+    font-family: "LatoWebBold";
+}
+
+.link-section .title {
+    color: #ED4435;
+    font-size: 20px;
+}
+
+.link-section .links a {
+    font-family: "LatoWebThin";
+    color: #BCBCBC;
+}
+
+.link-section .links a {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.link-section .title,
+.link-section .links a {
+    display: block;
+    text-align: center;
+}
+
+/*  Haikus Slideshow
+============================================================================*/
+.haikus {
+    position: absolute;
+    top: 105px;
+    left: 33px;
+    right: 33px;
+    bottom: 138px;
+    overflow: hidden;
+}
+
+.haikus img {
+    width: 100%;
+}
+
+.haikus ul.slidesjs-pagination,
+.haikus a.slidesjs-navigation {
+    display: none !important;
+}
+
+/*  Media Queries - Desktop
+============================================================================*/
+@media (min-width: 1025px) and (max-width: 116px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .col-sm-12.phone {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .haikujam-wrapper {
+        display: table;
+        position: relative;
+        width: 100%;
+        margin-top: 220px;
+    }
+
+    .haikujam {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+    }
+
+    .haikujam > picture.logo {
+        display: block;
+    }
+
+    .links-section {
+        padding-top: 30px;
+    }
+
+    .phone {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .phone .img-wrapper {
+        margin-top: 100px;
+        height: 1108px;
+        overflow-y: hidden;
+        margin-bottom: -194px;
+    }
+
+    .app-container, .app-details, .pos-rel{
+        height: 100vh;
+        min-height: 700px;
+    }
+
+    picture.logo > img {
+        width: 15vw;
+    }
+
+    .store-button{
+        width: 12vw;
+        padding: 8px 6px 8px 16px;
+        background: white;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 1px 1px #808080b8;
+        margin: 8px;
+        -webkit-transition: box-shadow 0.5s; /* Safari */
+        transition: box-shadow 0.5s;
+    }
+
+    .store-button:hover{
+        box-shadow: 2px 4px 12px #808080b8;
+    }
+
+    .store-button.iOS{
+        padding: 8px 6px 8px 6px;
+    }
+
+    .store-button > img {
+        width: 30px;
+    }
+
+    .app-links{
+        margin-top: 36px;
+    }
+
+}
+
+@media (min-width: 1264px) {
+    .haikujam {
+        left: -7%;
+    }
+}
+
+@media (min-width: 1444px) {
+    .haikujam {
+        left: -14%;
+    }
+}
+
+@media (max-width: 534px) {
+    .img-wrapper .phone-wrapper {
+        width: 70vw;
+        max-width: 529.64px;
+    }
+
+    .haikus {
+        position: absolute;
+        top: 13.1%;
+        left: 8.3%;
+        right: 8.3%;
+        bottom: 0px;
+        overflow: hidden;
+    }
+
+    .haikus .slidesjs-container img,
+    .haikus .slidesjs-container {
+        width: 91% !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .link-section {
+        padding: 10px 20px;
+    }
+}
+
+/*  Media Queries - <= 992px
+============================================================================*/
+@media (max-width: 992px) {
+
+    .img-wrapper {
+        text-align: center;
+    }
+
+    .img-wrapper img {
+        float: none;
+        max-width: none;
+    }
+
+    .haikujam-wrapper {
+        text-align: center;
+    }
+
+    .haikujam-wrapper .haikujam {
+        display: inline-block;
+    }
+}
+
+/*  Media Queries - <= 1024px
+============================================================================*/
+@media (max-width: 1024px) {
+
+    .img-wrapper {
+        text-align: center;
+    }
+
+    .img-wrapper img {
+        float: none;
+        max-width: none;
+    }
+
+    .phone .img-wrapper {
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    .img-wrapper .phone-wrapper {
+        float: none;
+        display: inline-block;
+        margin-bottom: -148px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .haikujam-wrapper {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .haikujam-wrapper .haikujam {
+        display: inline-block;
+    }
+
+    .hidden-sm {
+        display: none;
+    }
+
+    .visible-sm.col-sm-12 {
+        display: block !important;
+    }
+
+    .haikujam > .logo > img{
+        width: 30vw;
+    }
+
+    picture.logo > img {
+        width: 20vw;
+    }
+
+    .store-button{
+        width: 12vw;
+        min-width: 140px;
+        padding: 8px 6px 8px 16px;
+        background: white;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 1px 1px #808080b8;
+        margin: 8px;
+        -webkit-transition: box-shadow 0.5s; /* Safari */
+        transition: box-shadow 0.5s;
+    }
+
+    .store-button:hover{
+        box-shadow: 2px 4px 12px #808080b8;
+    }
+
+    .store-button.iOS{
+        padding: 8px 6px 8px 6px;
+    }
+
+    .store-button > img {
+        width: 30px;
+    }
+
+    .haikujam .tagline {
+        font-size: 20px;
+    }
+}
+
+/*  Media Queries - <= 720px
+============================================================================*/
+@media (max-width: 720px) {
+    .img-wrapper img {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/*  Media Queries - 480px - 720px
+============================================================================*/
+@media (min-width: 480px) and (max-width: 720px) {
+    .links-section .title {
+        font-size: 18px;
+    }
+
+    .link-section .links a {
+        font-size: 20px;
+    }
+}
+
+/*  Media Queries - <= 480px
+============================================================================*/
+@media (max-width: 480px) {
+    .links-section .title {
+        font-size: 11px;
+    }
+
+    .link-section .links a {
+        font-size: 13px;
+    }
+
+    .phone .img-wrapper {
+        margin-top: 0px;
+    }
+
+    .haikujam .tagline {
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-top: 6px;
+    }
+
+    .haikujam > .logo > img {
+        width: 40vw;
+    }
+
+    .app-container{
+        height: 100vh;
+    }
+
+    .phone{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .app-links{
+        margin-top: 4vh;
+    }
+
+    .haikujam-wrapper{
+        margin-top: 5vh;
+    }
+}
+
+/*============================================================================
+     Flexbox Centering Haikujam Logo
+============================================================================*/
+
