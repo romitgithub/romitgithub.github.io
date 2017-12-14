@@ -207,10 +207,10 @@ a.android, a.iOS{
 @media (min-width: 1024px) {
 
     .haikujam-wrapper {
-        display: table;
+        display: table-cell;
         position: relative;
         width: 100%;
-        margin-top: 220px;
+        vertical-align: middle;
     }
 
     .haikujam {
@@ -234,15 +234,21 @@ a.android, a.iOS{
     }
 
     .phone .img-wrapper {
-        margin-top: 100px;
-        height: 1108px;
+        /*margin-top: 100px;*/
+        /*height: 1108px;*/
         overflow-y: hidden;
-        margin-bottom: -194px;
+        margin-bottom: -;
+        position: absolute;
+        bottom: -14vh;
     }
 
-    .app-container, .app-details, .pos-rel{
+    .app-container, .app-details, .pos-rel, .phone{
         height: 100vh;
         min-height: 700px;
+    }
+
+    .app-details{
+        display: table;
     }
 
     picture.logo > img {
@@ -281,13 +287,17 @@ a.android, a.iOS{
 
 @media (min-width: 1264px) {
     .haikujam {
-        left: -7%;
     }
 }
 
 @media (min-width: 1444px) {
-    .haikujam {
-        left: -14%;
+    .phone .img-wrapper {
+        /*margin-top: 100px;*/
+        /*height: 1108px;*/
+        overflow-y: hidden;
+        margin-bottom: -;
+        position: absolute;
+        bottom: -4vh;
     }
 }
 
