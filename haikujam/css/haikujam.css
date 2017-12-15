@@ -118,18 +118,12 @@ a.android, a.iOS{
     overflow: hidden;
 }
 
-.img-wrapper .phone-wrapper
-    /*, .img-wrapper img*/
-{
+.img-wrapper .phone-wrapper{
     width: 400px;
-    /*margin-right: 2.5em;*/
-    /* margin-bottom: -371px; */
-    /* display: inline-block; */
     position: relative;
     top: 5px;
     float: right;
     margin-right: 40px;
-    /*margin: auto;*/
 }
 
 .phone-wrapper > img {
@@ -139,7 +133,7 @@ a.android, a.iOS{
 
 .haikujam .tagline {
     font-family: "Proxima Nova";
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     letter-spacing: 0.21em;
 }
@@ -162,7 +156,7 @@ a.android, a.iOS{
 }
 
 .link-section .links a {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -194,9 +188,6 @@ a.android, a.iOS{
 
 /*  Media Queries - Desktop
 ============================================================================*/
-@media (min-width: 1025px) and (max-width: 116px) {
-
-}
 
 @media (min-width: 992px) and (max-width: 1024px) {
     .col-sm-12.phone {
@@ -237,9 +228,9 @@ a.android, a.iOS{
         /*margin-top: 100px;*/
         /*height: 1108px;*/
         overflow-y: hidden;
-        margin-bottom: -;
         position: absolute;
-        bottom: -14vh;
+        bottom: 0;
+        margin-bottom: -10vh;
     }
 
     .app-container, .app-details, .pos-rel, .phone{
@@ -252,11 +243,12 @@ a.android, a.iOS{
     }
 
     picture.logo > img {
-        width: 15vw;
+        width: 22vw;
     }
 
     .store-button{
         width: 12vw;
+        max-width: 140px;
         padding: 8px 6px 8px 16px;
         background: white;
         border: none;
@@ -268,7 +260,7 @@ a.android, a.iOS{
     }
 
     .store-button:hover{
-        box-shadow: 2px 4px 12px #808080b8;
+        box-shadow: 4px 6px 16px #808080b8;
     }
 
     .store-button.iOS{
@@ -286,24 +278,114 @@ a.android, a.iOS{
 }
 
 @media (min-width: 1264px) {
-    .haikujam {
-    }
-}
-
-@media (min-width: 1444px) {
     .phone .img-wrapper {
         /*margin-top: 100px;*/
         /*height: 1108px;*/
         overflow-y: hidden;
-        margin-bottom: -;
         position: absolute;
-        bottom: -4vh;
+        bottom: 0;
+        margin-bottom: -13vh;
+    }
+}
+
+@media (min-width: 1380px) {
+    .phone .img-wrapper {
+        /*margin-top: 100px;*/
+        /*height: 1108px;*/
+        overflow-y: hidden;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -18vh;
+    }
+
+    .haikujam .tagline {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1444px) and (max-width : 1920px){
+    .phone .img-wrapper {
+        overflow-y: hidden;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -18vh;
+    }
+
+    .img-wrapper .phone-wrapper{
+        width: 460px;
+    }
+
+    .haikujam-wrapper{
+        margin-left: 80px;
+    }
+
+    .haikujam .tagline {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .phone .img-wrapper {
+        overflow-y: hidden;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -22vh;
+    }
+
+    .img-wrapper .phone-wrapper{
+        width: 500px;
+    }
+
+    picture.logo > img {
+        width: 18vw;
+    }
+
+    .haikus {
+    position: absolute;
+    top: 105px;
+    left: 38px;
+    right: 38px;
+    overflow: hidden;
+}
+}
+
+@media (min-width: 2560px) {
+    .phone .img-wrapper {
+        overflow-y: hidden;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -32vh;
+    }
+
+    .img-wrapper .phone-wrapper{
+        width: 600px;
+    }
+
+    .haikus {
+        position: absolute;
+        top: 112px;
+        left: 46px;
+        right: 46px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 3260px) {
+    .phone .img-wrapper {
+        overflow-y: hidden;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -42vh;
+    }
+
+    .img-wrapper .phone-wrapper{
+        width: 800px;
     }
 }
 
 @media (max-width: 534px) {
     .img-wrapper .phone-wrapper {
-        width: 70vw;
+        width: 64vw;
         max-width: 529.64px;
     }
 
@@ -322,9 +404,51 @@ a.android, a.iOS{
     }
 }
 
+@media(max-width: 480px){
+    .img-wrapper .phone-wrapper {
+        width: 72vw;
+        max-width: 529.64px;
+    }
+}
+
+@media(max-width: 420px){
+    .img-wrapper .phone-wrapper {
+        width: 80vw;
+        max-width: 529.64px;
+    }
+}
+
 @media (max-width: 720px) {
     .link-section {
         padding: 10px 20px;
+    }
+}
+
+@media(max-height: 812px) and (max-width: 420px){
+    .img-wrapper .phone-wrapper {
+        width: 90vw;
+        max-width: 529.64px;
+    }
+}
+
+@media(max-height: 736px) and (max-width: 420px){
+    .img-wrapper .phone-wrapper {
+        width: 76vw;
+        max-width: 529.64px;
+    }
+}
+
+@media(max-height: 736px) and (max-width: 412px){
+    .img-wrapper .phone-wrapper {
+        width: 70vw;
+        max-width: 529.64px;
+    }
+}
+
+@media(max-height: 736px) and (max-width: 360px){
+    .img-wrapper .phone-wrapper {
+        width: 76vw;
+        max-width: 529.64px;
     }
 }
 
@@ -402,8 +526,8 @@ a.android, a.iOS{
     }
 
     .store-button{
-        width: 12vw;
-        min-width: 140px;
+        width: 10vw;
+        min-width: 100px;
         padding: 8px 6px 8px 16px;
         background: white;
         border: none;
@@ -423,11 +547,15 @@ a.android, a.iOS{
     }
 
     .store-button > img {
-        width: 30px;
+        width: 24px;
+    }
+
+    .store-button.iOS > img{
+        width: 22px;
     }
 
     .haikujam .tagline {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -450,6 +578,11 @@ a.android, a.iOS{
     .link-section .links a {
         font-size: 20px;
     }
+
+    .haikujam .tagline {
+        font-size: 14px;
+    }
+
 }
 
 /*  Media Queries - <= 480px
