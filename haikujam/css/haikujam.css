@@ -475,15 +475,18 @@ a.android, a.iOS{
 }
 
 @media (min-width: 3260px) {
-    .phone .img-wrapper {
+    /*.phone .img-wrapper {
         overflow-y: hidden;
         position: absolute;
         bottom: 0;
         margin-bottom: -42vh;
-    }
+    }*/
 
     .img-wrapper .phone-wrapper{
         width: 800px;
+        position: absolute;
+        right: 40px;
+        bottom: -80px;
     }
 
     picture.logo > img {
