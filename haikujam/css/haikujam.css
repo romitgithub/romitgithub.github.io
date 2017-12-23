@@ -49,6 +49,8 @@
 
 div.changing-gradient {
     min-height: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /*  Utilities
@@ -120,8 +122,6 @@ a.android, a.iOS{
 
 .img-wrapper .phone-wrapper{
     width: 400px;
-    position: relative;
-    top: 5px;
     float: right;
     margin-right: 30px;
 }
@@ -202,6 +202,13 @@ a.android, a.iOS{
 
 @media (min-width: 1024px) {
 
+    .img-wrapper .phone-wrapper{
+        position: absolute;
+        width: 400px;
+        right: 0;
+        bottom: -160px;
+    }
+
     .haikujam-wrapper {
         display: table-cell;
         position: relative;
@@ -230,8 +237,6 @@ a.android, a.iOS{
     }
 
     .phone .img-wrapper {
-        /*margin-top: 100px;*/
-        /*height: 1108px;*/
         overflow-y: hidden;
         position: absolute;
         bottom: 0;
@@ -245,10 +250,15 @@ a.android, a.iOS{
 
     .app-details{
         display: table;
+        overflow: hidden;
     }
 
     picture.logo > img {
         width: 400px;
+    }
+
+    .haikujam .tagline{
+        font-size: 26px;
     }
 
     .store-button{
@@ -287,28 +297,66 @@ a.android, a.iOS{
 }
 
 @media (min-width: 1264px) {
-    .phone .img-wrapper {
-        /*margin-top: 100px;*/
-        /*height: 1108px;*/
+
+    .img-wrapper .phone-wrapper{
+        position: absolute;
+        width: 400px;
+        right: 0;
+        bottom: -120px;
+    }
+
+    /*.phone .img-wrapper {
         overflow-y: hidden;
         position: absolute;
         bottom: 0;
         margin-bottom: -13vh;
     }
+*/
+    .haikujam .tagline{
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1320px) {
+
+    .img-wrapper .phone-wrapper{
+        position: absolute;
+        width: 420px;
+        right: 0;
+        bottom: -140px;
+    }
+
+    /*.phone .img-wrapper {
+        overflow-y: hidden;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -24vh;
+    }*/
+
+    .haikujam .tagline{
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 1380px) {
-    .phone .img-wrapper {
-        /*margin-top: 100px;*/
-        /*height: 1108px;*/
+    /*.phone .img-wrapper {
+        margin-top: 100px;
+        height: 1108px;
         overflow-y: hidden;
         position: absolute;
         bottom: 0;
         margin-bottom: -18vh;
+    }*/
+
+    .img-wrapper .phone-wrapper{
+        position: absolute;
+        width: 460px;
+        right: 0;
+        bottom: -160px;
     }
 
     .haikujam .tagline {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .app-details{
@@ -317,16 +365,19 @@ a.android, a.iOS{
 }
 
 @media (min-width: 1444px) and (max-width : 1920px){
-    .phone .img-wrapper {
+    /*.phone .img-wrapper {
         overflow-y: hidden;
         position: absolute;
         bottom: 0;
-        margin-bottom: -18vh;
+        margin-bottom: -22vh;
         padding-right: 20px;
-    }
+    }*/
 
     .img-wrapper .phone-wrapper{
+        position: absolute;
         width: 460px;
+        right: 20px;
+        bottom: -80px;
     }
 
     picture.logo > img {
@@ -338,7 +389,7 @@ a.android, a.iOS{
     }
 
     .haikujam .tagline {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .app-details{
@@ -348,20 +399,23 @@ a.android, a.iOS{
 }
 
 @media (min-width: 1920px) {
-    .phone .img-wrapper {
+    /*.phone .img-wrapper {
         overflow-y: hidden;
         position: absolute;
         bottom: 0;
-        margin-bottom: -22vh;
+        margin-bottom: -28vh;
         padding-right: 30px;
-    }
+    }*/
 
     .img-wrapper .phone-wrapper{
-        width: 500px;
+        width: 520px;
+        position: absolute;
+        right: 30px;
+        bottom: -80px;
     }
 
     picture.logo > img {
-        width: 500px;
+        width: 560px;
     }
 
     .haikus {
@@ -376,19 +430,26 @@ a.android, a.iOS{
         margin-top:120px;
         padding-left: 30px;
     }
+
+    .haikujam .tagline{
+        font-size: 36px;
+    }
 }
 
 @media (min-width: 2560px) {
-    .phone .img-wrapper {
+    /*.phone .img-wrapper {
         overflow-y: hidden;
         position: absolute;
         bottom: 0;
         margin-bottom: -32vh;
         padding-right: 40px;
     }
-
+*/
     .img-wrapper .phone-wrapper{
         width: 600px;
+        position: absolute;
+        right: 40px;
+        bottom: -80px;
     }
 
     picture.logo > img {
@@ -406,6 +467,10 @@ a.android, a.iOS{
     .app-details{
         margin-top:160px;
         padding-left: 40px;
+    }
+
+    .haikujam .tagline{
+        font-size: 40px;
     }
 }
 
@@ -526,6 +591,15 @@ a.android, a.iOS{
 ============================================================================*/
 @media (max-width: 1024px) {
 
+    .phone-wrapper{
+        position: relative;
+        margin-bottom: -150px;
+    }
+
+    .haikujam-wrapper {
+        display: block;
+    }
+
     .img-wrapper {
         text-align: center;
     }
@@ -543,9 +617,9 @@ a.android, a.iOS{
     .img-wrapper .phone-wrapper {
         float: none;
         display: inline-block;
-        margin-bottom: -148px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
     }
 
     .haikujam-wrapper {
