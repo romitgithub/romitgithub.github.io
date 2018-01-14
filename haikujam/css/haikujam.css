@@ -109,6 +109,10 @@ a.android, a.iOS{
     display: none;
 }
 
+button.store-button:focus{
+    outline: 0;
+}
+
 /* Phone Section
 ============================================================================*/
 
