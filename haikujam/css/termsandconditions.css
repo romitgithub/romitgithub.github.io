@@ -1,0 +1,106 @@
+.proxima-nova {
+    font-family: "Proxima Nova";
+}
+
+/*  Gradient
+============================================================================*/
+.changing-gradient {
+
+    background: #ff3f71;
+    background-image: linear-gradient(135deg, #ff2d60, #ff9132, #ff61fa, #6caafd, #29ccff, #1deab9);
+    background-repeat: no-repeat;
+    background-size: 800% 400%;
+
+    -webkit-animation-name: bgAnimationChangingGradient;
+    animation-name: bgAnimationChangingGradient;
+
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+@keyframes bgAnimationChangingGradient {
+    0% {
+        background-position: 0 50%
+    }
+    to {
+        background-position: 100% 50%
+    }
+}
+
+div.changing-gradient{
+    padding: 24px;
+    text-align: center;
+}
+
+.logo img{
+    width: 160px;
+}
+
+.changing-gradient h2{
+    margin: 0px;
+    margin-top: 24px;
+    color: white;
+}
+
+.tncContent{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.tncContent p{
+    font-size: 14px;
+}
+
+p.text_caps{
+    font-size: 14px;
+    text-transform: uppercase;   
+}
+
+p.tnc_content_header{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+p.text_margin_left{
+    margin: 0px;
+    margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+    
+    .changing-gradient h2{
+        margin: 0px;
+        margin-top: 24px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .logo img{
+        width: 60%;
+        max-width: 140px;
+        min-width: 80px;
+    }
+
+    .tncContent{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+}
