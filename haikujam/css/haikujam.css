@@ -48,7 +48,6 @@
 }
 
 div.changing-gradient {
-    min-height: 768px;
     height: 100vh;
     overflow: hidden;
 }
@@ -61,9 +60,9 @@ html, body, .full-width-height {
     min-height: 100%;
 }
 
-/*.mh-100-per {
+.mh-100-per {
     min-height: 100%;
-}*/
+}
 
 .h-100-per {
     height: 100%;
