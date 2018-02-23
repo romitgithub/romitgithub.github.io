@@ -99,7 +99,7 @@
                 <div class="col-md-6 col-sm-12 phone">
                     <div class="img-wrapper pos-rel">
                         <div class="phone-wrapper">
-                            <img src="img/phone.png" alt="Phone Cover">
+                            <img src="img/phone.png" alt="Phone Cover" class="phone-wrapper-img">
                             <div class="haikus">
                                 <img src="./img/haikus/haikus_website-09-26-10.jpg">
                                 <img src="./img/haikus/haikus_website-09-26-2.jpg">
@@ -217,7 +217,9 @@
 <script src="js/main.js"></script>
 <!-- to load correct button based on user agent -->
 <script type="text/javascript">
-    
+
+    setContainerHeight();
+
     if (isMobile.Android()) {
         $('.android').show();
         $('.iOS').hide();
@@ -228,6 +230,20 @@
     else{
         $('.iOS').show();
         $('.android').show();   
+    }
+
+    function setContainerHeight(){
+
+        var windowHeight = $(window).height();
+        $('.changing-gradient').height(windowHeight);
+
+        var phoneWrapperHeight = $('.img-wrapper').height();
+        var phoneWrapperImageHeight  = $('.phone-wrapper-img').height();
+
+        if(phoneWrapperHeight < phoneWrapperImageHeight){
+            console.log('adda');
+            $('.phone-wrapper-img').height(phoneWrapperHeight);
+        }
     }
 
 </script>
