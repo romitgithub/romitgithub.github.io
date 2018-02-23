@@ -218,8 +218,6 @@
 <!-- to load correct button based on user agent -->
 <script type="text/javascript">
 
-    setContainerHeight();
-
     if (isMobile.Android()) {
         $('.android').show();
         $('.iOS').hide();
@@ -230,6 +228,7 @@
     else{
         $('.iOS').show();
         $('.android').show();   
+        setContainerHeight();
     }
 
     function setContainerHeight(){
